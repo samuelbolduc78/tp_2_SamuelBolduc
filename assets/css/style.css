@@ -390,7 +390,7 @@ justify-self: center;
 }
 .Infor-Imp, li:not(li, img){
   gap: 20px;
-  
+  max-width: 1000px;
 }
 footer > ul {
   display: flex;
