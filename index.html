@@ -84,8 +84,10 @@
     <section class="sect-conteneur">
       <article>
         <section class="video">
-          <a href="https://youtu.be/6IegDENuxU4?si=CCECtARwhFyCDlk4">Voir la video pour commencer aux echec</a>
-          <a href="https://youtu.be/y7VtSK23_Jg?si=X50KcBubRT8OPOYh">Voir notre competition pour voir les erreurs de la eBoard 1.9</a>
+          <ul>
+         <li><a href="https://youtu.be/6IegDENuxU4?si=CCECtARwhFyCDlk4">Voir la video pour commencer aux echec</a></li>
+           <li><a href="https://youtu.be/y7VtSK23_Jg?si=X50KcBubRT8OPOYh">Voir notre competition pour voir les erreurs de la eBoard 1.9</a></li>
+        </ul>
       </section>
         <div class="vrai-statistique">
           <table>
@@ -147,46 +149,107 @@
 
       <section class="inscription">
         <form action="" method="post">
-          <section>
-              <div class="input-group">
-                  <input type="text" name="nom" required />
-              </div>
-      
-              <div class="input-group">
-                  <input type="text" name="prenom" required />
-              </div>
-              <div class="input-group">
-                <input type="email" name="courriel" required />
-            </div>
-    
-              <div class="input-group">
-                  <input type="password" name="motDePasse" required minlength="8" />
-              </div>
-      
-              
-              <div class="input-group">
-                  <input
-                      type="tel"
-                      name="telephone"
-                      required
-                      maxlength="13"
-                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                  />
-              </div>
-          </section>
-         
-
-          <div class="btn-group">
-              <input type="reset" />
-              <input type="submit" value="Créer un compte" />
+          <section class="formpage">
+          <header><div><h1>Entrez Vos Information Ici</div></h1></header>
+  
+          <div class="info-input">
+              <label for="nom">Nom</label>
+              <input type="text" name="nom" id="nom" required  maxlength="300">
+  
           </div>
-      </form>
+  
+          <div class="info-input"> 
+              <label for="prenom">Prénom</label>
+              <input type="text" name="prenom" id="prenom" required  maxlength="300">
+          </div>
+          
+          
+          <div class="info-input">
+              <label for="Courriel">Courriel</label>
+              <input type="email" name="Courriel" id="Courriel"  minlength="5" maxlength="400" required>
+          </div>
+  <div class="info-input">
+          <label for="motdepasse">Mot De Passe</label>
+          <input type="password" name="motdepasse" id="motdepasse" minlength="12" maxlength="200" required>
+  </div>
+  <div class="info-input">
+      <label for="datenaissance"> Date de naissance </label>
+              <input type="date" name="datenaissance" id="datenaissance">
+  </div>
+          
+          <h3>Votre Genre</h3>
+      <section class="genrechoix">
+          <div class="info-input">
+              <label for="Genre-1">Homme</label>
+              <input type="radio" name="genre" id="Genre-1" value="Genre-1" required>
+          </div>
+  
+          <div class="info-input">
+              <label for="Genre-2">Femme</label>
+              <input type="radio" name="genre" id="Genre-2" value="Genre-2" required>
+          </div>
+  
+          <div class="info-input">
+          <label for="Genre-3">Neutre</label>
+          <input type="radio" name="genre" id="Genre-3" value="Genre-3" required>
+      </div>
+  </section>
+  
+          
+  </section>
+  <section class="info-input">
+  <div >
+          <Label for="Liste">Comment avez-vous entendu parler de nous?</Label>
+                             <select name="Liste" id="Liste">
+                  <option value="1">Moteur de recherche</option>
+                  <option value="2">Réseaux sociaux</option>
+                  <option value="3">Bouche à oreille</option>
+                  <option value="4">Autre</option>
+              </select>
+   </div>
+    </section>
+    <section class="info-input">
+  <p>Autres informations pertinentes</p>
+      <div>
+  
+         <label for="infopert"></label>
+  
+        
+         <textarea name="infopert" id="infopert" minlength="20" maxlength="5000" rows="20" cols="110"></textarea>
+      
+  </div>
+   </section> 
+  <section class="info-input">
+  <div>
+  <label for="photo">Ajoutez Votre Photo</label>
+  <input type="file" name="photo" id="photo" required accept="image/jpg, image/jpeg, image/png, image/gif">
+    </div>   
+   </section>    
+  
+  <section class="info-input">
+      <p>Voulez-vous vous abonner à l'infolettre </p>
+  <div>
+       <label for="oui">Oui</label>
+       <input type="checkbox" name="oui" id="oui" value="oui" required>
+      </div>
+      <div>
+       <label for="non">Non</label>
+       <input type="checkbox" name="non" id="non" value="non"  required >
+      </div>
+      </section>
+  
+      <section class="info-input">
+         <div class="btn"><input type="reset"></div>
+          <div class="btn"><input type="submit"></div>
+      </section>
+  </form>
       </section>
     </main>
     <footer> <ul class="Infor-Imp">
       <li>3800 Sherbrooke St E, Montreal, Quebec H1X 2A2</li>
       <li><a href="https://www.cmaisonneuve.qc.ca/">Lien du cegep</a></li>
-      <li>A lintegration multimedia, on est un groupe detudiant qui a pour but de faire des projets de film, jeux, website design et design graphique. Le TIM est un programme tres creatif, pour les </li>
+      <li>A lintegration multimedia, on est un groupe detudiant qui a pour but de faire
+        des projets de film, jeux, website design et design graphique.</li>
       <li>Avis de confidentialite | Privacy Notice &copy; Samuel Bolduc, 2024</li>
 
    
