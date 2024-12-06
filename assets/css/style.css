@@ -51,11 +51,7 @@
   }
 }
 
-body {
-min-height: 100vh;
-min-width: 100vw;
-  
-}
+
 
 :root {
   --couleur-accent: rgb(2, 7, 35);
@@ -119,6 +115,7 @@ gap: 50px;
  flex-direction: column;
  padding-top: 50px;
  font-family: var( --police-secondaire);
+ height: 100vh;
 }
 
 .sous-acceuil, .sous-acceuil-2{
@@ -140,21 +137,7 @@ table {
   gap: 150px;
 }
 
-table {
-  font-family: var( --police-secondaire);
 
-  display: grid;
-  column-gap: 50px;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
-table {
-  display: flex;
-  justify-content: center;
-}
 
 nav {
   backdrop-filter: blur(5px);
@@ -171,14 +154,16 @@ z-index: 6000;
   right: 0;
 
   padding: var(--espace-nav);
+
 }
 
 article {
-  
+  height:100vh ;
   width: 800px;
   display: flex;
   justify-self: center;
 font-family: var(--police-secondaire);
+
 
   gap: 50px;
 }
@@ -212,6 +197,7 @@ h2 {
 }
 
 .menu {
+
   display: flex;
   flex-direction: row;
   gap: var(--texte-lg);
@@ -236,18 +222,21 @@ li a:hover {
   justify-content: flex-start;
   display: flex;
   flex-direction: row;
-min-height: 70vh;
+  height: 100vh;
+
   
   background: linear-gradient(180deg, var(--couleur-bg-2) 5%, var(--couleur-bg-1)) ;
 }
 
 .Firefly img{
-
+object-fit: contain;
 }
 
 .Firefly{
   display: flex;
   flex-direction: row;
+  height: 100vh;
+
 }
 
 .Firefly p{
@@ -271,7 +260,8 @@ align-items: baseline;
 } */
 
 .chessboard1 {
-  
+  height: 100vh;
+
   position: absolute;
   bottom: 0;
  height: 100%;
@@ -294,6 +284,8 @@ align-items: baseline;
 
 }
 table {
+  height: 100vh;
+
   margin: 0 auto;
   min-width: 50%;
   padding-top: 5vh;
@@ -379,8 +371,11 @@ main{
 }
 
 
-.inscription{
-  display: none !important;
+form{
+  height: 100vh;
+
+background-color: #630986;
+backdrop-filter: blur(5px);
 }
 
 footer ul> li{
