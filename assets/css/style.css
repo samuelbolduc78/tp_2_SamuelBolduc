@@ -51,11 +51,8 @@
   }
 }
 
-body {
-min-height: 100vh;
-min-width: 100vw;
-  
-}
+
+
 
 :root {
   --couleur-accent: rgb(2, 7, 35);
@@ -135,6 +132,13 @@ gap: 50px;
   padding-top: 13px;
   padding-bottom: 20px;
   color: #ffffff;
+}
+
+.acceuil > img{
+  width: 300px;
+  aspect-ratio: 1/1;
+  align-self: center;
+
 }
 
 article,
@@ -240,13 +244,13 @@ nav li a:hover {
   justify-content: flex-start;
   display: flex;
   flex-direction: row;
-min-height: 70vh;
+height: 100vh;
   
   background: linear-gradient(180deg, var(--couleur-bg-2) 5%, var(--couleur-bg-1)) ;
 }
 
 .Firefly img{
-
+  height: 70vh;
 }
 
 .Firefly{
@@ -266,13 +270,6 @@ min-height: 70vh;
 
 }
 
-/* .tracteur-full{
-margin-top: 833px;
-object-fit: contain;
-display: flex;
-justify-content: flex-end ;
-align-items: baseline;
-} */
 
 .chessboard1 {
   
@@ -325,46 +322,6 @@ table tbody td {
 
 
 }
- 
-
-
-/* .tracteur{
-    object-fit: contain;
-position: absolute; */
-
-/* } */
-
-/* .deux-roue{
- 
-    gap: 50px;
-}
-#roue{
-    animation: roueTourner 4s ,
-     animPlanche 4s ease-in-out;
-     transform: translateX(-500px);
-    margin-top: 121px;
-    margin-left: -301px;
-    transition: 4s;
-}
-#roue1{
-   
-    animation: roueTourner 4s , 
-    animPlanche 4s ease-in-out;
-    transform: translateX(-500px);
-    margin-top: 144px;
-    margin-left: -169px;
-    transition: 4s;
-   
-}
-
-#roue1{
-}
-
-#tracteur1{
-    animation: animPlanche 4s ease-in-out;
-    transform: translateX(-500px);
-    transition: 4s;
-} */
 
 .tracteur-full {
   display: flex;
@@ -374,8 +331,7 @@ position: absolute; */
   bottom: 0px;
 
   left: -700px;
-  /* margin-top: 532px;
-    margin-left: -1670px; */
+  
 }
 
 main{
@@ -417,8 +373,6 @@ background: linear-gradient(
 );
 height: 100px;
 
-
-
-
+font-family: var( --police-secondaire);
 }
 
