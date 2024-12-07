@@ -90,17 +90,7 @@ main,
 .message + table {
   gap: 50px;
 }
-.acceuil {
-  min-height: 70vh;
-  align-items: flex-start;
-  background-color: #000000;
-  color: white;
-  display: flex;
-  gap: 100px;
-  flex-direction: column;
-  padding-top: 50px;
-  font-family: var(--police-secondaire);
-}
+
 
 .video,
 li a {
@@ -136,7 +126,8 @@ h2 {
 }
 
 .acceuil {
-  min-height: 70vh;
+  min-height: 100vh;
+  min-width: 100vw;
   align-items: flex-start;
   background-color: #000000;
   color: white;
@@ -168,11 +159,13 @@ ul li {
 }
 
 table {
+  min-height: 100vh;
   font-family: var(--police-secondaire);
 }
 
 article {
-  height: 100vh;
+  min-height: 100vh;
+ 
   display: flex;
   justify-content: center;
 }
@@ -218,6 +211,7 @@ article {
 }
 
 .menu {
+  
   display: flex;
   flex-direction: row;
   gap: var(--texte-lg);
@@ -241,7 +235,7 @@ nav li a:hover {
   justify-content: flex-start;
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  
 
   background: linear-gradient(
     180deg,
@@ -249,9 +243,12 @@ nav li a:hover {
     var(--couleur-bg-1)
   );
 }
+.gallerie-photo {
+  min-height: 100vh;
+}
 
 .Firefly img {
-  height: 70vh;
+  max-height: 70vh;
 }
 
 .Firefly {
@@ -294,7 +291,7 @@ table {
   border-radius: 5px;
 }
 
-table thead tr th {
+table thead tr th  {
   background-color: rgb(150, 122, 250);
   border: 3px solid black;
 }
@@ -334,7 +331,8 @@ form {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
+  
 }
 form,
 input {
@@ -374,6 +372,12 @@ footer {
 }
 
 .La-Vrai-Gallerie-Photo {
+ 
+  min-height: 100vh;
+  
+}
+.La-Vrai-Gallerie-Photo {
+ 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
