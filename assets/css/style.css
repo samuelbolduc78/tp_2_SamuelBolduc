@@ -29,26 +29,26 @@
 }
 @keyframes animInfoPrix1 {
   0% {
-    transform: translate(0, 500px);
-     filter: opacity(0%);
+    transform: rotate(90deg);
+     
+  }
+  30% {
+    transform: rotate(130deg);
+     
   }
   50% {
-    
-     filter: opacity(0%);
+    transform: rotate(180deg);
+     
   }
   70% {
-    
-    filter: opacity(0%);
- }
- 90% {
-    
-  filter: opacity(0%);
-}
- 
-  100% {
-    transform: translate(0, 0px);
-    filter: opacity(85%);
+    transform: rotate(270deg);
+     
   }
+  100% {
+    transform: rotate(360deg);
+     
+  }
+
 }
 
 
@@ -89,26 +89,65 @@
   --texte-xxxl: 64px;
 }
 
-li a {
+.menu li a {
   text-decoration: none;
   font-family: var(--police-principale);
   color: var(--couleur-accent);
 }
 
+
+
+main, .message + table {
+  gap: 50px;
+  }
+  .acceuil {
+    min-height: 70vh; 
+    align-items: flex-start;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    gap: 100px;
+   flex-direction: column;
+   padding-top: 50px;
+   font-family: var( --police-secondaire);
+  }
+
+  .video, li a {
+    color: white;
+  }
+
+ article,
+table {
+
+  display: flex;
+  gap: 150px;
+}
+article,
+p {
+  display: flex;
+  gap: 90px;
+  flex-direction: column;
+}
+
+p {
+  word-spacing: 4px;
+  line-height: 27px;
+}
+
+h1,
+h2 {
+  font-size: var(--texte-lg);
+  font-weight: bold;
+}
 .message{
   
-  background-color: #f1b8e1;
-  border: 3px solid #f1b8e1  ;
+  background-color: rgb(107, 107, 237);
+  border: 3px solid rgb(107, 107, 237) ;
   border-radius: 5px;
 
 }
-.video, li a {
-  color: white;
-}
 
-main, .message + table {
-gap: 50px;
-}
+
 .acceuil {
   min-height: 70vh; 
   align-items: flex-start;
@@ -141,23 +180,21 @@ gap: 50px;
 
 }
 
-article,
-table {
 
-  display: flex;
-  gap: 150px;
-}
 
 table {
+   
+
   font-family: var( --police-secondaire);
 
-  display: grid;
-  column-gap: 50px;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 3;
+ 
 }
+
+article{
+height: 100vh;
+display: flex;
+justify-content: center
+};
 
 table {
   display: flex;
@@ -201,23 +238,7 @@ font-family: var(--police-secondaire);
  
 }
 
-article,
-p {
-  display: flex;
-  gap: 90px;
-  flex-direction: column;
-}
 
-p {
-  word-spacing: 4px;
-  line-height: 27px;
-}
-
-h1,
-h2 {
-  font-size: var(--texte-lg);
-  font-weight: bold;
-}
 
 .menu {
   display: flex;
@@ -306,7 +327,7 @@ border: 3px solid black;
 
  
 table thead tr th {
-  background-color: violet;
+  background-color: rgb(150, 122, 250);
   border: 3px solid black;
 
 
@@ -314,7 +335,7 @@ table thead tr th {
  
 table tbody td {
   padding: 40px;
-  background-color: violet;
+  background-color: rgb(150, 122, 250);
   border: 3px solid black;
   border-radius: 5px;
 
@@ -338,12 +359,29 @@ main{
   padding-top: 114px;
 }
 
+.form1, h1{
+  display: flex;
+  align-items: center;  
+  flex-direction: column;
+}
 
 form{
+ 
   color: white;
 background-color: #000000;
 backdrop-filter: blur(5px);
+display: flex;
+align-items: center;
+flex-direction: column;
+height: 100vh;
+
 }
+form, input{
+border-radius: 5px;
+gap: 75px;
+}
+ 
+
 
 footer ul> li{
 display: flex;
@@ -376,3 +414,28 @@ height: 100px;
 font-family: var( --police-secondaire);
 }
 
+
+.La-Vrai-Gallerie-Photo {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+background-color: #000000;
+  }
+  
+  .La-Vrai-Gallerie-Photo img:hover {
+
+animation:animInfoPrix1 4s ;
+border: rgb(239, 236, 236) solid 5px;
+
+  }
+  .form1{
+    font-family: var( --police-secondaire);
+
+    color: #ffffff;
+    background-color: #000000;
+  }
+
+  figcaption{
+    color: white;
+    font-size: 5px;
+  }
