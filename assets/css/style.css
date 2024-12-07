@@ -1,6 +1,6 @@
 @import url(reset.css);
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Iceberg&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Iceberg&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @keyframes animPlanche {
   0% {
     transform: translate(0, 0px);
@@ -30,38 +30,29 @@
 @keyframes animInfoPrix1 {
   0% {
     transform: rotate(90deg);
-     
   }
   30% {
     transform: rotate(130deg);
-     
   }
   50% {
     transform: rotate(180deg);
-     
   }
   70% {
     transform: rotate(270deg);
-     
   }
   100% {
     transform: rotate(360deg);
-     
   }
-
 }
-
-
-
 
 :root {
   --couleur-accent: rgb(2, 7, 35);
   --footerbaspage: #040a3a;
   --couleur-acceuil-1: #190123;
-  --couleur-acceuil-2:#000000;
+  --couleur-acceuil-2: #000000;
   --couleur-bg-1: #630986;
   --couleur-bg-1-1: #330346;
-  --couleur-prix-1:#0d6bee00;
+  --couleur-prix-1: #0d6bee00;
   --couleur-bg-2: #000000;
   --couleur-bg-4: #c9a1ca;
   --couleur-degrade-1: #9739e9;
@@ -78,7 +69,7 @@
   --espacement-xxl: 50px;
   --espacement-xxxl: 100px;
   --police-principale: "Audiowide", sans-serif;
-  --police-secondaire:"Iceberg", sans-serif;
+  --police-secondaire: "Iceberg", sans-serif;
 
   --texte-lg: 24px;
   --texte-md: 18px;
@@ -95,30 +86,29 @@
   color: var(--couleur-accent);
 }
 
-
-
-main, .message + table {
+main,
+.message + table {
   gap: 50px;
-  }
-  .acceuil {
-    min-height: 70vh; 
-    align-items: flex-start;
-    background-color: #000000;
-    color: white;
-    display: flex;
-    gap: 100px;
-   flex-direction: column;
-   padding-top: 50px;
-   font-family: var( --police-secondaire);
-  }
+}
+.acceuil {
+  min-height: 70vh;
+  align-items: flex-start;
+  background-color: #000000;
+  color: white;
+  display: flex;
+  gap: 100px;
+  flex-direction: column;
+  padding-top: 50px;
+  font-family: var(--police-secondaire);
+}
 
-  .video, li a {
-    color: white;
-  }
+.video,
+li a {
+  color: white;
+}
 
- article,
+article,
 table {
-
   display: flex;
   gap: 150px;
 }
@@ -139,62 +129,53 @@ h2 {
   font-size: var(--texte-lg);
   font-weight: bold;
 }
-.message{
-  
+.message {
   background-color: rgb(107, 107, 237);
-  border: 3px solid rgb(107, 107, 237) ;
+  border: 3px solid rgb(107, 107, 237);
   border-radius: 5px;
-
 }
 
-
 .acceuil {
-  min-height: 70vh; 
+  min-height: 70vh;
   align-items: flex-start;
   background-color: #000000;
   color: white;
   display: flex;
   gap: 100px;
- flex-direction: column;
- padding-top: 50px;
- font-family: var( --police-secondaire);
+  flex-direction: column;
+  padding-top: 50px;
+  font-family: var(--police-secondaire);
 }
 
-.sous-acceuil, .sous-acceuil-2{
+.sous-acceuil,
+.sous-acceuil-2 {
   width: 500px;
   word-spacing: 4px;
   line-height: 27px;
   align-self: center;
-
 }
-.sous-acceuil-2, ul li{
+.sous-acceuil-2,
+ul li {
   padding-top: 13px;
   padding-bottom: 20px;
   color: #ffffff;
 }
 
-.acceuil > img{
+.acceuil > img {
   width: 300px;
   aspect-ratio: 1/1;
   align-self: center;
-
 }
-
-
 
 table {
-   
-
-  font-family: var( --police-secondaire);
-
- 
+  font-family: var(--police-secondaire);
 }
 
-article{
-height: 100vh;
-display: flex;
-justify-content: center
-};
+article {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
 
 table {
   display: flex;
@@ -209,8 +190,8 @@ nav {
     var(--couleur-degrade-2)
   );
   font-weight: bold;
-  position: fixed ;
-z-index: 6000;
+  position: fixed;
+  z-index: 6000;
   top: 0;
   left: 0;
   right: 0;
@@ -219,26 +200,22 @@ z-index: 6000;
 }
 
 article {
-  
   width: 800px;
   display: flex;
   justify-self: center;
-font-family: var(--police-secondaire);
+  font-family: var(--police-secondaire);
 
   gap: 50px;
 }
 
-.sect-conteneur{
+.sect-conteneur {
   backdrop-filter: blur(5px);
   background: linear-gradient(
     180deg,
-    var(--couleur-bg-1)25%,
+    var(--couleur-bg-1) 25%,
     var(--footerbaspage)
   );
- 
 }
-
-
 
 .menu {
   display: flex;
@@ -246,7 +223,6 @@ font-family: var(--police-secondaire);
   gap: var(--texte-lg);
   font-size: var(--texte-md);
   justify-content: center;
-  
 }
 
 nav li a:hover {
@@ -258,90 +234,76 @@ nav li a:hover {
   transition: 100ms ease-in-out;
 }
 .gallerie-photo {
-  font-family: var( --police-secondaire);
+  font-family: var(--police-secondaire);
 
   display: flex;
   position: relative;
   justify-content: flex-start;
   display: flex;
   flex-direction: row;
-height: 100vh;
-  
-  background: linear-gradient(180deg, var(--couleur-bg-2) 5%, var(--couleur-bg-1)) ;
+  height: 100vh;
+
+  background: linear-gradient(
+    180deg,
+    var(--couleur-bg-2) 5%,
+    var(--couleur-bg-1)
+  );
 }
 
-.Firefly img{
+.Firefly img {
   height: 70vh;
 }
 
-.Firefly{
+.Firefly {
   display: flex;
   flex-direction: row;
 }
 
-.Firefly p{
+.Firefly p {
   color: #ffffff;
   word-spacing: 4px;
   line-height: 27px;
   width: 600px;
   display: flex;
   align-items: center;
-  
-
-
 }
 
-
 .chessboard1 {
-  
   position: absolute;
   bottom: 0;
- height: 100%;
+  height: 100%;
   left: -10px;
   animation: animPlanche 8s linear forwards;
 }
 
-
-.chess-conteneur{
+.chess-conteneur {
   display: flex;
   justify-content: center;
-  
-} 
-
-
+}
 
 .chessboard1:hover {
   box-shadow: 0 0 10px 10px black;
   transition: 1s ease-in-out;
-
 }
 table {
   margin: 0 auto;
   min-width: 50%;
   padding-top: 5vh;
   display: contents;
-border: 3px solid black;
+  border: 3px solid black;
   border-radius: 5px;
 }
- 
 
- 
 table thead tr th {
   background-color: rgb(150, 122, 250);
   border: 3px solid black;
-
-
 }
- 
+
 table tbody td {
   padding: 40px;
   background-color: rgb(150, 122, 250);
   border: 3px solid black;
   border-radius: 5px;
-
-
-
-
 }
 
 .tracteur-full {
@@ -352,90 +314,84 @@ table tbody td {
   bottom: 0px;
 
   left: -700px;
-  
 }
 
-main{
+main {
   padding-top: 114px;
 }
 
-.form1, h1{
+.form1,
+h1 {
   display: flex;
-  align-items: center;  
+  align-items: center;
   flex-direction: column;
 }
 
-form{
- 
+form {
   color: white;
-background-color: #000000;
-backdrop-filter: blur(5px);
-display: flex;
-align-items: center;
-flex-direction: column;
-height: 100vh;
-
+  background-color: #000000;
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
-form, input{
-border-radius: 5px;
-gap: 75px;
+form,
+input {
+  border-radius: 5px;
+  gap: 75px;
 }
- 
 
-
-footer ul> li{
-display: flex;
-flex-direction: row;
-justify-self: center;
+footer ul > li {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
 }
-.Infor-Imp, li:not(li, img){
+.Infor-Imp,
+li:not(li, img) {
   gap: 20px;
   max-width: 1000px;
 }
 footer > ul {
   display: flex;
- 
+
   justify-self: center;
-  
-  }
-
-footer {
-top: 0;
-left: 0;
-right: 0;
-
-background: linear-gradient(
-  90deg,
-  var(--couleur-degrade-1),
-  var(--couleur-degrade-2)
-);
-height: 100px;
-
-font-family: var( --police-secondaire);
 }
 
+footer {
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background: linear-gradient(
+    90deg,
+    var(--couleur-degrade-1),
+    var(--couleur-degrade-2)
+  );
+  height: 100px;
+
+  font-family: var(--police-secondaire);
+}
 
 .La-Vrai-Gallerie-Photo {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-background-color: #000000;
-  }
-  
-  .La-Vrai-Gallerie-Photo img:hover {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #000000;
+}
 
-animation:animInfoPrix1 4s ;
-border: rgb(239, 236, 236) solid 5px;
+.La-Vrai-Gallerie-Photo img:hover {
+  animation: animInfoPrix1 4s;
+  border: rgb(239, 236, 236) solid 5px;
+}
+.form1 {
+  font-family: var(--police-secondaire);
 
-  }
-  .form1{
-    font-family: var( --police-secondaire);
+  color: #ffffff;
+  background-color: #000000;
+}
 
-    color: #ffffff;
-    background-color: #000000;
-  }
-
-  figcaption{
-    color: white;
-    font-size: 5px;
-  }
+figcaption {
+  color: white;
+  font-size: 5px;
+}
