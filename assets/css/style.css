@@ -44,7 +44,7 @@
     transform: rotate(360deg);
   }
 }
-
+/* Le smooth scroll behavior ne marche pas bien */
 body, html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
